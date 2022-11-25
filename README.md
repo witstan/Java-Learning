@@ -56,10 +56,19 @@ git branch --all
 > 新建分支(以当前所在分支复制)
 ``` bash
 git branch xxxname
+
+git push xxxx
 ```
+
 
 # step 3:
 > 切换分支
 ``` bash
 git checkout xxxname
+```
+
+# step4:
+> 合并分支
+```
+git merge xxxname
 ```
