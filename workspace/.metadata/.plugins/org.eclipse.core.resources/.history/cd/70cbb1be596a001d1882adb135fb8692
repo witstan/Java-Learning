@@ -1,0 +1,10 @@
+package com.atguigu.exer;
+/*
+ * 使用二维数组打印一个  10 行杨辉三角。
+ * 
+ */
+public class ArrayExer2 {
+	public static void main(String[] args) {
+		int[][] arr = new int[][]
+	}
+}
