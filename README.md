@@ -12,11 +12,11 @@ git clone http://xxxx.git
 # step3:
 > 提交修改描述信息
 * 1.查看当前修改的状态 - 可选
-```
+``` bash
 git status
 ```
 * 2.添加修改文件至暂存区
-```
+``` bash
 git add --all
 git add .
 ```
@@ -29,4 +29,10 @@ git commit -m 'xxx提交说明内容'
 > 推送添加的暂存文件至远端仓库
 ``` bash
 git push
+```
+
+# step 5:
+> 拉取远程更新至本地仓库
+``` bash
+git pull
 ```
