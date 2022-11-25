@@ -36,3 +36,30 @@ git push
 ``` bash
 git pull
 ```
+
+# 分支管理
+* main - 主分支
+* dev - 开发分支
+* test - 测试分支
+
+# step 1:
+> 查看当前分支
+``` bash
+git branch
+```
+> 查看所有分支
+``` bash
+git branch --all
+```
+
+# step 2:
+> 新建分支(以当前所在分支复制)
+``` bash
+git branch xxxname
+```
+
+# step 3:
+> 切换分支
+``` bash
+git checkout xxxname
+```
