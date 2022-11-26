@@ -9,19 +9,13 @@ public class Homework04 {
 		
 		int[] arr = new int[]{34,5,22,-98,6,-76,0,-3};
 		
-		boolean exist = false;
-		int index = 0;
+
 		for(int i = 0; i < arr.length; i++){
 			if(arr[i] == 22){
-				exist = true;
-				index = i;
+				System.out.println("22的所在位置为：" + i);
 				break;
 			}
 		}
-		if(exist == true){
-			System.out.println("22的所在位置为：" + index);
-		}else{
-			System.out.println("not found");
-		}
+
 	}
 }

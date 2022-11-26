@@ -37,64 +37,65 @@ public class ArrayExer3_1 {
 		
 		int x = 0, y = 0;
 		
-		for(int index = 0; index < num*num; index++){
+		for(int index = 1; index <= (num*num); index++){
 			
-			if(direc == 1){
-				if(y < num){
-					arr[x][y] = index + 1;
-					y++;	
-				}else{
+			if(direc == 1){												//in15		
+				// 4
+				if(y < num && arr[x][y] == 0){// y<4					// y<4
+					arr[x][y] = index;//in4 x0 y3 arr[0][3] 4			//in14 x1 y2 arr[1][2] in14
+					y++;//y4											//y3
+				}else{//in5 x0 y4 arr[0][3]4
 					direc = 2;
-					y = num - 1;
-					
+					x++;//x1
+					y--;//y3
+					index--;//in4	
 				}
-			}
-			// x = 0, y = num - 1
-			
-			if(direc == 2){
-				if(x < num){
-					arr[x][y] = index + 1;
-					x++;
-				}else{
+				
+			}else if(direc == 2){//in8
+				
+				if(x < num && arr[x][y] == 0){// x<4
+					arr[x][y] = index;//in7 x3 y3 arr[3][3] in7
+					x++;//x4
+				}else{//in8
 					direc = 3;
-					x = num - 1;
-					y -= 1;
+					x--;//x3
+					y--;//y2
+					index --;//in7
 				}
-			}
-			// x = num - 1, y = num - 2
-			
-			/*if(direc == 3){
-				if(y > 0){
-					arr[x][y] = index + 1;
-					y--;
-				}else{
+				
+			}else if(direc == 3){//in11
+				
+				if(y >= 0 && arr[x][y] == 0){//y>=0  arr[3][0] == 0
+					arr[x][y] = index;//in10 x3 y0 arr[3][0] in10
+					y--;//y-1
+				}else{//in11
 					direc = 4;
-					y = 0;
+					y++;//y0
+					x--;//x2
+					index--;//in10
 				}
-			}*/
-			// x = num - 1, y = 0
-			
-			/*if(direc == 4){
-				if(x > 0){
-					arr[x][y] = index + 1;
-					x--;
-				}else{
+				
+			}else if(direc == 4){//in13
+				
+				if(x >= 0 && arr[x][y] == 0){//x>=0  arr[1][0] == 0
+					arr[x][y] = index;//in12 x1 y0 arr[1][0] in12
+					x--;//x0
+				}else{//in13
 					direc = 1;
-					y += 1;
+					y++;//x1
+					x++;//y1
+					index--;//in12
 				}
-			}*/
-			// x = 1, y = 1
 				
-				
-				
+			}
+	
 		}		
 		
-		
-		
+			
 		for(int i = 0; i < arr.length; i++){
 			for(int j = 0; j < arr[i].length; j++){
 				
-				System.out.print(arr[i][j] + " ");
+				System.out.print(arr[i][j] + "\t");
 					
 				}
 			System.out.println();					
