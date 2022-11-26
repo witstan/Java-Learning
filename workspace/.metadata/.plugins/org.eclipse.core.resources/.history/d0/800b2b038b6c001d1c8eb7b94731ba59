@@ -1,9 +1,0 @@
-package com.witstan.java;
-/*
- * 数组中的常见异常：
- * 1.数组角标越界的异常：
- * 
- */
-public class ArrayExceptionTest {
-
-}
