@@ -1,7 +1,8 @@
 # Java-Learning
 learn to code
 
-How to use git
+# How to use git
+
 # step 1:
 ``` bash
 git clone http://xxxx.git
