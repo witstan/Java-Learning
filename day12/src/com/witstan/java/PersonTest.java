@@ -11,6 +11,9 @@ package com.witstan.java;
  * 	1.创建类，设计类的成员
  * 	2.创建类的对象
  * 	3.通过“对象.属性”或“对象.方法”调用对象的结构
+ * 
+ * 三、如果创建了一个类的多个对象，则每个对象都独立拥有一套类的属性。（非static的）
+ * 	 意味着：如果我妈修改一个对象的属性a，则不影响另外一个对象属性a的值。
  *  
  */
 
@@ -31,6 +34,20 @@ public class PersonTest {
 		p1.eat();
 		p1.sleep();
 		p1.talk("Mandarin");
+		
+		//**************************
+		Person p2 = new Person();
+		System.out.println(p2.name);//null
+		System.out.println(p2.isMale);//false
+		//**************************
+		
+		//将p1变量保存的对象地址值赋值给p3，这时候p1和p3指向堆空间中的同一个对象实体。
+		Person p3 = p1;
+		System.out.println(p3.name);//Tom
+		
+		p3.age = 10;
+		System.out.println(p1.age);//10
+		
 	}
 }
 

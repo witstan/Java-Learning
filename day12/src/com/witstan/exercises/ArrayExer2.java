@@ -33,7 +33,7 @@ public class ArrayExer2 {
 				}
 			}
 		}
-		System.out.println("排序后的数组为：" + Arrays.toString(arr));
+		System.out.println("排序后的数组为：" + "            " +  Arrays.toString(arr));
 		
 		
 		System.out.println("请输入一个1~100的整数：");
@@ -41,7 +41,7 @@ public class ArrayExer2 {
 		
 		int[] arr1 = new int[arr.length + 1];
 			
-			
+		//解答方式一：	
 		/*if(arr[0] >= num){
 			arr1[0] = num;
 			for(int i = 1; i < arr1.length; i++){
@@ -68,9 +68,9 @@ public class ArrayExer2 {
 			}
 		}*/
 		
-		//其实还不如直接搞个单层循环的冒泡排序，笑死，如下
+		//解答方式二：简单使用单层冒泡排序，如下
 		
-		arr1[0] = num;
+		/*arr1[0] = num;
 		for(int i = 1; i < arr1.length; i++){
 			arr1[i] = arr[i - 1]; 
 		}
@@ -81,7 +81,26 @@ public class ArrayExer2 {
 				arr1[i] = arr1[i + 1];
 				arr1[i + 1] = temp;
 			}
+		}*/
+		
+		//解答方式三，也很简便：
+		arr1[0] = num;
+		for(int i = 0; i < arr1.length - 1; i++){
+		
+			num = arr[i];
+			
+			if(arr1[i] <= num){
+				
+				arr1[i + 1] = num;
+				
+			}else{
+				
+				arr1[i + 1] = arr1[i];
+				arr1[i] = num;
+			}
 		}
+		
+		
 		
 		
 		System.out.println(Arrays.toString(arr1));
