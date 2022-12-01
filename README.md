@@ -1,3 +1,10 @@
+# Daily Update on 2022/12/01 
+Leart about content below
+1. Overload
+2. Passing by value
+3. Recursion
+
+
 # Java-Learning
 learn to code
 

@@ -20,11 +20,14 @@ public class ArrayUtilTest {
 		int avgValue = util.getAvg(arr);
 		System.out.println(avgValue);
 		
+		System.out.println("***************util.reverse***************");
 		util.reverse(arr);
 		util.print(arr);
 		
+		System.out.println("***************util.copy***************");
 		util.print(util.copy(arr));
 		
+		System.out.println("***************util.sort***************");
 		util.sort(arr);
 		util.print(arr);
 		

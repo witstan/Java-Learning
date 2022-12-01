@@ -8,7 +8,7 @@ public class ArrayTest2 {
 	public static void main(String[] args) {
 		String[] arr = new String[]{"AA","BB","CC","DD","EE","FF"};
 		
-		//数组的服饰（区别于数组变量的复制：arr1 = arr)
+		//数组的赋值（区别于数组变量的复制：arr1 = arr)
 		String[] arr1 = new String[arr.length];
 		for(int i = 0;i < arr1.length;i++){
 			arr1[i] = arr[i];
