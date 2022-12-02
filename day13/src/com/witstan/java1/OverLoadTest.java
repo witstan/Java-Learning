@@ -43,12 +43,17 @@ public class OverLoadTest {
 		System.out.println("4");
 	}
 	
+	//如下3个方法不构成重载
 //	public int getSum(int i, int j){
 //		return 0;
 //	}
-	
+//	
 //	public int getSum(int m, int n){
 //	
+//	}
+//	
+//	private int getSum(int i, int j);{
+//		
 //	}
 
 }

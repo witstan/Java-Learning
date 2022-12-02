@@ -11,6 +11,7 @@ public class ValueTransferTest {
 	
 	public static void main(String[] args) {
 		
+		System.out.println("**************基本数据类型*************");
 		int m = 10;
 		int n = m;
 		
@@ -18,6 +19,9 @@ public class ValueTransferTest {
 		
 		n = 20;
 		System.out.println("m = " + m + ",  n = " + n);
+		
+		
+		System.out.println("**************引用数据类型*************");
 		
 		Order o1 = new Order();
 		

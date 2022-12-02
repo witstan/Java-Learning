@@ -43,6 +43,7 @@ public class MethodArgsTest {
 		}
 	}
 	
+	//不能与上一个方法同时存在
 //	public void show(String[] s){
 //		
 //	}

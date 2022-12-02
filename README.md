@@ -1,7 +1,13 @@
+# Daily Update on 2022/12/02
+Leart about contents below
+1. OOP - Encapsulation
+2. OOP - Constructor
+3. this Keyword
+
 # Daily Update on 2022/12/01 
-Leart about content below
+Leart about contents below
 1. Overload
-2. Passing by value
+2. Pass by value
 3. Recursion
 
 
