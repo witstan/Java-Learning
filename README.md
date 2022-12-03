@@ -1,3 +1,14 @@
+# Daily Update on 2022/12/03
+Did exercises about contents below
+1. OOP - Account and Customer Class Exercise
+2. OOP - Array as Object Exercise
+
+Leart about contents below
+1. OOP - import keyword
+2. OOP - package Keyword
+
+
+
 # Daily Update on 2022/12/02
 Leart about contents below
 1. OOP - Encapsulation

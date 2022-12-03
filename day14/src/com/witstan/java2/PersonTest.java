@@ -18,7 +18,7 @@ package com.witstan.java2;
  * 		① 我们在类的构造器中，可以显式的使用“this（形参列表）”，调用本类中指定的其他构造器
  * 		② 构造器中不能通过“this（形参）”调用自己本身。
  * 		③ 如果一个类中有n个构造器，则最多有n-1个构造器中使用了“this（形参列表）”
- * 		④ 规定：“this（形参列表）”必须声明在构造器内部的首行
+ * 		④ 规定：“this（形参列表）”必须声明在当前构造器内部的首行
  */
 public class PersonTest {
 	public static void main(String[] args) {
