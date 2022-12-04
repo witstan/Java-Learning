@@ -1,22 +1,32 @@
+# Daily Update on 2022/12/02
+> Project with 50% progress
+1.myproject02
+
+> Reviewed the following contents
+1.Encapsulation
+2.Constructor
+3.this and package Keyword
+
+
 # Daily Update on 2022/12/03
-Did exercises about contents below
+> Did exercises about contents below
 1. OOP - Account and Customer Class Exercise
 2. OOP - Array as Object Exercise
 
-Leart about contents below
+> eart about contents below
 1. OOP - import keyword
 2. OOP - package Keyword
 
 
 
 # Daily Update on 2022/12/02
-Leart about contents below
+> Leart about contents below
 1. OOP - Encapsulation
 2. OOP - Constructor
 3. this Keyword
 
 # Daily Update on 2022/12/01 
-Leart about contents below
+> Learnt about contents below
 1. Overload
 2. Pass by value
 3. Recursion
