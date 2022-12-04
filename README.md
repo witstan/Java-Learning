@@ -1,11 +1,11 @@
 # Daily Update on 2022/12/04
 > Project with 50% progress
-1.myproject02
+1. myproject02
 
 > Reviewed the following contents
-1.Encapsulation
-2.Constructor
-3.this and package Keyword
+1. Encapsulation
+2. Constructor
+3. this and package Keyword
 
 
 # Daily Update on 2022/12/03
