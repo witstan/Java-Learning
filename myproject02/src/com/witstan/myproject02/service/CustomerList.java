@@ -88,13 +88,13 @@ public class CustomerList {
 	* @return 替换成功返回true；false表示索引无效，无法替换
 	 */
 	public boolean replaceCustomer(int index, Customer cust){
-		if(index < 0 || index >= total){
-			//System.out.println("索引无效，无法替换");
-			return false;
-		}else{
+//		if(index < 0 || index >= total){
+//			//System.out.println("索引无效，无法替换");
+//			return false;
+//		}else{
 			customers[index] = cust;
 			return true;
-		}
+//		}
 		
 	}
 	
@@ -107,10 +107,10 @@ public class CustomerList {
 	* @return 删除成功返回true；false表示索引无效，无法删除
 	 */
 	public boolean deleteCustomer(int index){
-		if(index < 0 || index >= total){
-			//System.out.println("索引无效，无法删除");
-			return false;
-		}else{
+//		if(index < 0 || index >= total){
+//			//System.out.println("索引无效，无法删除");
+//			return false;
+//		}else{
 			for(int i = index;i < total - 1; i++){
 				customers[i] = customers[i + 1];
 			}
@@ -119,7 +119,7 @@ public class CustomerList {
 			//customers[index] = new Customer();
 			return true;
 		}
-	}
+//	}
 	
 	/**
 	 * 

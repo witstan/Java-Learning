@@ -1,11 +1,25 @@
-# Daily Update on 2022/12/02
-> Project with 50% progress
-1.myproject02
+# Daily Update on 2022/12/05
+> Project with 100% progress
+1. myproject02
 
-> Reviewed the following contents
-1.Encapsulation
-2.Constructor
-3.this and package Keyword
+> learnt about contents below
+1. OOP - Inheritance
+2. Eclipse Debug Features
+
+> Reviewed the following content
+1. OOP - Inheritance
+
+> Did Exercise of following content
+1. OOP - Inheritance
+
+# Daily Update on 2022/12/04
+> Project with 50% progress
+1. myproject02
+
+> Reviewed the Following Contents
+1. Encapsulation
+2. Constructor
+3. this and package Keyword
 
 
 # Daily Update on 2022/12/03
@@ -13,14 +27,14 @@
 1. OOP - Account and Customer Class Exercise
 2. OOP - Array as Object Exercise
 
-> eart about contents below
+> learnt about contents below
 1. OOP - import keyword
 2. OOP - package Keyword
 
 
 
 # Daily Update on 2022/12/02
-> Leart about contents below
+> Learnt about contents below
 1. OOP - Encapsulation
 2. OOP - Constructor
 3. this Keyword
