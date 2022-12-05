@@ -1,3 +1,4 @@
+
 # Daily Update on 2022/12/05
 > Project with 100% progress
 1. myproject02
@@ -21,7 +22,6 @@
 2. Constructor
 3. this and package Keyword
 
-
 # Daily Update on 2022/12/03
 > Did exercises about contents below
 1. OOP - Account and Customer Class Exercise
@@ -30,8 +30,6 @@
 > learnt about contents below
 1. OOP - import keyword
 2. OOP - package Keyword
-
-
 
 # Daily Update on 2022/12/02
 > Learnt about contents below
