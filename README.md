@@ -1,3 +1,8 @@
+# Daily Update on 2022/12/06
+> learnt about contents below and Exercises
+1. Method Overriding
+1. super Keyword
+2. OOP - Polymorphism
 
 # Daily Update on 2022/12/05
 > Project with 100% progress
