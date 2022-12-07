@@ -15,10 +15,13 @@ public class CylinderTest {
 		System.out.println(l);
 		
 		
-		c1.setRadius(4);
-		c1.setLength(3);
+		c1.setRadius(22.1);
+		c1.setLength(31.4);
 		
 		double volume = c1.findVolume();
 		System.out.println(volume);
+		
+		double area = c1.findArea();
+		System.out.println(area);
 	}
 }

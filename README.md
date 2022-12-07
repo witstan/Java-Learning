@@ -1,4 +1,15 @@
 # Daily Update on 2022/12/06
+> learnt about contents below and Exercised
+1. Object Type Casting
+2. instanceof Keyword
+3. Polymorphism Exercises
+
+> Reviewed the following content
+1. super Keyword
+2. Method Overriding
+3. Subclass Object Instantiation
+
+# Daily Update on 2022/12/06
 > learnt about contents below and Exercises
 1. Method Overriding
 1. super Keyword
