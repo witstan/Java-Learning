@@ -7,7 +7,7 @@
 5. Wrapper Classes(including autoboxing and unboxing)
 
 > Just for fun
-1. Wrote a method for outputting digits of an integer in recursive form
+1. Wrote a method for outputting digits of a positive integer in recursive form
 
 # Daily Update on 2022/12/07
 > learnt about contents below and Exercised
