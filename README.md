@@ -1,3 +1,14 @@
+# Daily Update on 2022/12/08
+> learnt about contents below and Exercised
+1. The Equality Operator (==) 
+2. The equals() Method and Override
+3. The toString() Method and Override
+4. JUnit
+5. Wrapper Classes(including autoboxing and unboxing)
+
+> Just for fun
+1. Wrote a method for outputting digits of an integer in recursive form
+
 # Daily Update on 2022/12/07
 > learnt about contents below and Exercised
 1. Object Type Casting
@@ -12,8 +23,8 @@
 # Daily Update on 2022/12/06
 > learnt about contents below and Exercised
 1. Method Overriding
-1. super Keyword
-2. OOP - Polymorphism
+2. super Keyword
+3. OOP - Polymorphism
 
 # Daily Update on 2022/12/05
 > Project with 100% progress
