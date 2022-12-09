@@ -1,6 +1,17 @@
+# Daily Update on 2022/12/09
+> learnt about contents below and did exercises
+1. static keyword
+2. Singleton - Lazy and Eager Initialization
+3. Blocks
+
+> Reviewed the following content
+1. Polymorphism
+2. Object class and internal methods
+3. Wrapper Classes
+
 # Daily Update on 2022/12/08
-> learnt about contents below and Exercised
-1. The Equality Operator (==) 
+> learnt about contents below and did exercises
+1. The Equality Operator (==) review
 2. The equals() Method and Override
 3. The toString() Method and Override
 4. JUnit

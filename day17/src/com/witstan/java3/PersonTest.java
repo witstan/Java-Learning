@@ -67,7 +67,7 @@ public class PersonTest {
 		 * 使用情景：为了避免在向下转型时出现ClassCastException的异常，在向下转型前先使用instanceof
 		 * 进行判断，如果返回true则进行转型，返回false不进行转型。
 		 * 
-		 * 如果a instanceof A 返回true，则a instanceof B 也返回true。
+		 * 如果a instanceof A 返回true，则a instanceof B 也返回true。其中类B是类A的父类
 		 * 
 		 */
 		

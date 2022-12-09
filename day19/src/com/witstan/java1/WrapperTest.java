@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /*
  * 包装类的使用：
- * 1. java提供了8种基本数据类型对应的包装类，是的基本数据类型的变量具有类的特征
+ * 1. java提供了8种基本数据类型对应的包装类，使得基本数据类型的变量具有类的特征
  * 
  * 2. 掌握：基本数据类型、包装类、String三者的转换
  * 
@@ -47,8 +47,12 @@ public class WrapperTest {
 		
 		Double d1 = new Double(1.24);
 		//double d2 = d1;
-		String s3 = String.valueOf(d1);
-		System.out.println(s3);
+//		String s3 = String.valueOf(d1);
+//		System.out.println(s3);
+		
+		Double d2 = 1.24;
+		boolean b1 = d1 == d2;
+		System.out.println(b1);
 		
 	}
 	
@@ -69,11 +73,17 @@ public class WrapperTest {
 		boolean b1 = true;
 		Boolean b2 = b1;//自动装箱
 		
+		Integer ll1 = 1;
+		int num4 = ll1;
+		System.out.println(ll1 + num4);
+		
+		
 		//自动拆箱：包装类 --->基本数据类型
 		System.out.println(in1.toString());
 		
 		
 		int num3 = in1;//自动拆箱
+		
 		
 		
 	}
