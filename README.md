@@ -1,8 +1,18 @@
+# Daily Update on 2022/12/10
+> learnt about contents below and did exercises
+1. final keyword
+2. abstract keyword
+
+> Reviewed the following content
+1. static keyword
+2. Singleton
+3. Block
+
 # Daily Update on 2022/12/09
 > learnt about contents below and did exercises
 1. static keyword
 2. Singleton - Lazy and Eager Initialization
-3. Blocks
+3. Block
 
 > Reviewed the following content
 1. Polymorphism
@@ -21,7 +31,7 @@
 1. Wrote a method for outputting digits of a positive integer in recursive form
 
 # Daily Update on 2022/12/07
-> learnt about contents below and Exercised
+> learnt about contents below and did exercises
 1. Object Type Casting
 2. instanceof Keyword
 3. Polymorphism Exercises
@@ -32,7 +42,7 @@
 3. Subclass Object Instantiation
 
 # Daily Update on 2022/12/06
-> learnt about contents below and Exercised
+> learnt about contents below and did exercises
 1. Method Overriding
 2. super Keyword
 3. OOP - Polymorphism

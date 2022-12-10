@@ -60,4 +60,14 @@ class Circle{
 	public double findArea(){
 		return Math.PI * radius * radius;
 	}
+
+	public static void setTotal(int total) {
+		Circle.total = total;
+	}
+
+	public static void setInit(int init) {
+		Circle.init = init;
+	}
+	
+	
 }
