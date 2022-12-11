@@ -36,6 +36,13 @@ abstract class Person extends Creature{
 		
 	}
 	
+	public Person(String name, int age){
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+
 	//不是抽象方法
 //	public void eat(){
 //		
@@ -50,8 +57,9 @@ abstract class Person extends Creature{
 }
 
 class Student extends Person{
-	public Student(String name){
-		super();
+	
+	public Student(String name, int age){
+		super(name, age);
 	}
 	
 	public void eat(){

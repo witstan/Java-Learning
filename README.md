@@ -1,3 +1,9 @@
+# Daily Update on 2022/12/11
+> learnt about contents below and did exercises
+1. abstract keyword
+2. Design Patterns
+3. Abstract Methods and Class Exercise
+
 # Daily Update on 2022/12/10
 > learnt about contents below and did exercises
 1. final keyword
