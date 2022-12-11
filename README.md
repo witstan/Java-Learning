@@ -4,6 +4,9 @@
 2. Design Patterns
 3. Abstract Methods and Class Exercise
 
+> Just for fun
+1. Accomplished LeetCode Problem- Two Sum. Although a slow runtime but anyway it is a good start! Congrats!
+
 # Daily Update on 2022/12/10
 > learnt about contents below and did exercises
 1. final keyword
