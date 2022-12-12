@@ -1,3 +1,9 @@
+# Daily Update on 2022/12/12
+> learnt about contents below and did exercises
+1. Interface
+2. Proxy Pattern
+3. Factory Pattern
+
 # Daily Update on 2022/12/11
 > learnt about contents below and did exercises
 1. abstract keyword
