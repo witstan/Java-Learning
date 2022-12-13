@@ -45,7 +45,4 @@ class ProxyServer implements Network{
 		work.browse();
 		
 	}
-	
-	
-	
 }

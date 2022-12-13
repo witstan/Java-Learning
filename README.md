@@ -1,3 +1,14 @@
+# Daily Update on 2022/12/13
+> learnt about contents below and did exercises
+1. Interface after Java 8
+2. Inner Class
+3. Error & Exception
+
+> Reviewed the following content
+1. abstract keyword
+2. Interface
+3. Inner Class
+
 # Daily Update on 2022/12/12
 > learnt about contents below and did exercises
 1. Interface
@@ -11,7 +22,7 @@
 3. Abstract Methods and Class Exercise
 
 > Just for fun
-1. Accomplished LeetCode Problem - Two Sum. Although a slow runtime but anyway it is a good start! Congrats!
+1. Accomplished LeetCode Problem - Two Sum. Although a long runtime but anyway it is a good start! Congrats!
 
 # Daily Update on 2022/12/10
 > learnt about contents below and did exercises
