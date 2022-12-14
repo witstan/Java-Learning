@@ -1,3 +1,12 @@
+# Daily Update on 2022/12/14
+> learnt about contents below and did exercises
+1. finally keyword
+2. throw and throws
+3. Custom Exception
+
+> Reviewed the following content
+1. Error & Exception
+
 # Daily Update on 2022/12/13
 > learnt about contents below and did exercises
 1. Interface after Java 8

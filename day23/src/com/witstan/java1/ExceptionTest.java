@@ -37,7 +37,7 @@ public class ExceptionTest {
 	@Test
 	public void test7(){
 		try{
-			File file = new File("hello.text");
+			File file = new File("hello.txt");
 			FileInputStream fis = new FileInputStream(file);
 			
 			int data = fis.read();
