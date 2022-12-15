@@ -1,3 +1,7 @@
+# Daily Update on 2022/12/15
+> Project with 60% progress
+1. myproject03
+
 # Daily Update on 2022/12/14
 > learnt about contents below and did exercises
 1. finally keyword
