@@ -1,3 +1,9 @@
+# Daily Update on 2022/12/16
+> Project with 80% progress
+1. myproject03(one method and one class to go)
+
+got covid, haha, it may(looks like actully) slow the work.
+
 # Daily Update on 2022/12/15
 > Project with 60% progress
 1. myproject03
