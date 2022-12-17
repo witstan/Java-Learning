@@ -53,7 +53,7 @@ public class NameListService {
 							}
 						}, Double.parseDouble(Data.EMPLOYEES[i][5]), Integer.parseInt(Data.EMPLOYEES[i][6]));
 			}
-			for (int j = 0; j < Data.EQUIPMENTS.length; j++) {
+			for (int j = 1; j < Data.EQUIPMENTS.length; j++) {
 				if (Integer.parseInt(Data.EQUIPMENTS[j][0]) == Data.PC) {
 					if (employees[j] instanceof Programmer) {
 						Programmer p = (Programmer) employees[j];
@@ -89,9 +89,13 @@ public class NameListService {
 		throw new TeamException("找不到指定的员工");
 	}
 
+
 	public static void main(String[] args) {
 
 		NameListService test = new NameListService();
+		for(int i = 0; i < test.employees.length; i++){
+			System.out.println(test.employees[i].toString());
+		}
 		try {
 			System.out.println(test.getEmployee(5).getName());
 		} catch (TeamException e) {

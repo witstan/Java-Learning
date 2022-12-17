@@ -35,6 +35,7 @@ public class Data {
     //NoteBook:22, model, price
     //Printer :23, name, type 
     public static final String[][] EQUIPMENTS = {
+    	{},
         {"22", "联想T4", "6000"},
         {"21", "戴尔", "NEC17寸"},
         {"21", "戴尔", "三星 17寸"},

@@ -13,9 +13,11 @@ public class TeamService {
 	private int total = 0;
 
 	public Programmer[] getTeam() {
-		Programmer[] team = new Programmer[total];
-
-		return team;
+		Programmer[] currentTeam = new Programmer[total];
+		for(int i = 0; i < currentTeam.length; i++){
+			currentTeam[i] = team[i];
+		}
+		return currentTeam;
 	}
 
 	public void addMember(Employee e) throws TeamException{
@@ -61,19 +63,30 @@ public class TeamService {
 		
 	}
 
-	 public void removeMember(int menberId) throws TeamException(){
+	 public void removeMember(int menberId) throws TeamException{
 		 boolean notInTeam = true;
-		 
-		 for(int i = 0; i < total - 1; i++){
-			 if(team[i].getMenmberId() == menberId){
-				 team[i] = null; 
+		
+		 int index = 0;
+		
+		 for(int i = 0; i < total; i++){
+			 if(team[i].getMenmberId() == menberId){ 
+				 index = i;
 				 notInTeam = false;
+				 break;
+			 }	 
+		 }
+		 
+		 if(!notInTeam){
+			 for(int i = index; i < total; i++){
+			 if(i + 1 < total && team[i + 1] != null){
+				 team[i] = team[i + 1];
 			 }
 			 team[--total] = null;
+			 }
+		 }else{
+			  throw new TeamException("找不到指定memberId的员工，删除失败");
 		 }
-		 if(notInTeam){
-			 throw new TeamException("找不到指定memberId的员工，删除失败");
-		 }
+		 
 		 
 	 }
 

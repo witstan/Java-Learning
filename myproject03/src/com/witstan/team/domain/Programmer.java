@@ -41,6 +41,15 @@ public class Programmer extends Employee {
 	public void setStatus(Status string) {
 		this.status = string;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\t" + "程序员" + "\t" + status.getNAME() + "\t\t\t" + equipment.getDsecription();
+	}
+	
+	public String toTeamString() {
+		return getMenmberId() + "/" + super.toString() + "\t" + "程序员";
+	}
 	
 	
 	
