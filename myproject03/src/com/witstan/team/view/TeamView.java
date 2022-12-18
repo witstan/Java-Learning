@@ -17,10 +17,10 @@ public class TeamView {
 			System.out.println("-------------------------------------------------------------------------------");
 			System.out.print("1-团队列表  2-添加团队成员  3-删除团队成员 4-退出   请选择(1-4)：");
 			
-			int key = TSUtility.readMenuSelection();
+			char key = TSUtility.readMenuSelection();
 			
 			switch(key){
-			case 1:
+			case '1':
 				if(teamSvc.getTeam().length < 1){
 					System.out.println("开发团队目前没有成员！");
 				}else{
@@ -28,20 +28,21 @@ public class TeamView {
 				}
 				break;
 			
-			case 2:
+			case '2':
+				System.out.println("---------------------添加成员---------------------");
 				System.out.print("请输入要添加的员工ID：");
 				int id = TSUtility.readInt();
 				addMember(id);
 				break;
 			
-			case 3:
+			case '3':
 				if(teamSvc.getTeam().length < 1){
 					System.out.println("开发团队目前没有成员！");
 				}else{
-					
-					teamSvc.removeMember(menberId);;
+					System.out.print("请输入要删除员工的TID：");
+					deleteMember(TSUtility.readInt());
 				}
-			case 4:
+			case '4':
 				System.out.print("确认是否退出(Y/N)：");
 				char result = TSUtility.readConfirmSelection();
 				if(result == 'N'){
@@ -75,17 +76,25 @@ public class TeamView {
 		System.out.println("-----------------------------------------------------");
 	}
 	
-	private void addMember(int id) throws TeamException{
-		for(int i = 0; i < listSvc.getAllEmployees().length; i++){
-			if(listSvc.getAllEmployees()[i].getId() == id){
+	private void addMember(int id){
+		
 				teamSvc.addMember(listSvc.getAllEmployees()[i]);
-			}
-		}
+				System.out.println("添加成功");
+
+	
+		System.out.println("按回车键继续");
+		TSUtility.readReturn();
 		
 	}
 	
 	private void deleteMember(int menberId) throws TeamException{
-		teamSvc.removeMember(menberId);
+		if(teamSvc.getTeam().length < 1){
+			System.out.println("开发团队目前没有成员！");
+		}else{
+			System.out.print("请输入要删除员工的TID：");
+			System.out.print("确认是否删除(Y/N)：");
+			teamSvc.removeMember(menberId);
+		}
 	}
 	
 	public static void main(String[] args){

@@ -1,5 +1,6 @@
 package com.witstan.team.service;
 
+import com.atguigu.team.service.Status;
 import com.witstan.team.domain.Architect;
 import com.witstan.team.domain.Designer;
 import com.witstan.team.domain.Employee;
@@ -58,8 +59,10 @@ public class TeamService {
 			throw new TeamException("团队中至多只能有三名设计师");	
 		}
 		
+		
 		p.setMenmberId(counter++);
 		team[total++] = p;	
+		p.setStatus(Status.BUSY);
 		
 	}
 
