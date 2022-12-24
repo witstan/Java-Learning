@@ -6,6 +6,8 @@ finally, almost recovered from covid
 > learnt about contents below
 1. Thread
 
+And start to learn advanced content and to use IDEA
+
 # Daily Update on 2022/12/18
 > Project with 97% progress
 dizzy and headache
