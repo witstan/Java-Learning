@@ -1,6 +1,6 @@
 package com.witstan.team.service;
 
-import com.atguigu.team.service.Status;
+import com.witstan.team.service.Status;
 import com.witstan.team.domain.Architect;
 import com.witstan.team.domain.Designer;
 import com.witstan.team.domain.Employee;
@@ -75,10 +75,10 @@ public class TeamService {
 			 if(team[i].getMenmberId() == menberId){ 
 				 index = i;
 				 notInTeam = false;
+				 team[i].setStatus(Status.FREE);
 				 break;
 			 }	 
 		 }
-		 
 		 if(!notInTeam){
 			 for(int i = index; i < total; i++){
 			 if(i + 1 < total && team[i + 1] != null){
@@ -88,9 +88,7 @@ public class TeamService {
 			 }
 		 }else{
 			  throw new TeamException("找不到指定memberId的员工，删除失败");
-		 }
-		 
-		 
+		 } 
 	 }
 
 	private boolean isInTeam(Employee e) {

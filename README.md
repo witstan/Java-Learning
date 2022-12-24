@@ -1,11 +1,19 @@
+# Daily Update on 2022/12/24
+> Project with 100% progress
+1. myproject03
+finally, almost recovered from covid
+
+> learnt about contents below
+1. Thread
+
 # Daily Update on 2022/12/18
 > Project with 97% progress
 dizzy and headache
 
 # Daily Update on 2022/12/17
 > Project with 95% progress
-
 1. myproject03(one method and one class to go)
+
 # Daily Update on 2022/12/16
 > Project with 80% progress
 1. myproject03(one method and one class to go)
