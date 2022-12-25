@@ -1,9 +1,0 @@
-class Trump {
-	public static void main(String[] args) {
-		System.out.println("姓名：特朗普");
-		System.out.println();
-		System.out.print("性别：男");
-		System.out.println();
-		System.out.print("家庭住址：白宫");
-	}
-}

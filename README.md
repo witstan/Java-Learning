@@ -1,3 +1,14 @@
+# Daily Update on 2022/12/25
+> learnt about contents below and did exercises
+1. Two ways to create a thread
+2. Thread life cycle
+3. Thread safety
+4. synchronized key word
+
+> Reviewed the following content
+1. IDEA use
+2. Thread concept, creation and frequently used methods
+
 # Daily Update on 2022/12/24
 > Project with 100% progress
 1. myproject03

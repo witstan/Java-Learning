@@ -1,0 +1,28 @@
+/*
+100以内质数输出
+质数：素数，只能被1和它本身整除的自然数
+
+最小的质数是2
+*/
+
+class PrimeNumberTest {
+	public static void main(String[] args) {
+		
+		//day07自己写的
+		boolean b1 = true;
+		for (int pn = 2; pn <= 100; pn++){
+			for (int i = 2; i < pn; i++){
+				if (pn % i == 0){
+					b1 = false;
+				}
+			}
+			if (b1 == true){
+				System.out.println(pn);
+			}
+			b1 = true;
+
+		}
+
+
+	}
+}
