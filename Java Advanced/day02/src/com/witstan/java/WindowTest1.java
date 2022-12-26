@@ -14,12 +14,15 @@ package com.witstan.java;
  *   synchronized(同步监视器){
  *      //需要被同步的代码
  *   }
- *   说明：1.操作共享数据的代码，即为需要被同步的代码
+ *   说明：1.操作共享数据的代码，即为需要被同步的代码 --> 不能包含代码多了，也不能包含代码少了。
  *        2.共享数据：多个数据共同操作的变量。比如：ticket就是共享数据。
  *        3.同步监视器，俗称：锁。任何一个类的对象，都可以充当锁
  *          要求：多个线程必须要共用同一把锁。
  *
+ *        补充：在实现Runable接口创建多线程的方式中，可以考虑使用this充当同步监视器。
+ *
  *  方式二：同步方法
+ *      如果操作共享数据的代码完整得声明在一个方法中，不妨将此方法声明为同步的
  *
  * 5.同步的方式，解决了线程的安全问题。---好处
  *   操作同步代码时，只能有一个线程参与，其他线程等待。相当于时一个单线程的操作，效率低。 --- 局限性
@@ -33,11 +36,11 @@ package com.witstan.java;
 class Window1 implements Runnable{
 
     private int ticket = 100;
-    Object obj = new Object();
+//    Object obj = new Object();
     @Override
     public void run() {
         while (true){
-            synchronized(obj){
+            synchronized (this){//此时的this：唯一的Window1的对象 //方式二：synchronized(obj){
                 if(ticket > 0){
 
 //                    try {

@@ -1,3 +1,10 @@
+# Daily Update on 2022/12/26
+> learnt about contents below and did exercises
+1. Deadlock and how to deal with it
+2. Lock interface
+3. Inter-thread communicatio
+4. Difference between wait() and sleep()
+
 # Daily Update on 2022/12/25
 > learnt about contents below and did exercises
 1. Two ways to create a thread
