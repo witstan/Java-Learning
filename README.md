@@ -1,3 +1,11 @@
+# Daily Update on 2022/12/27
+> learnt about contents below and did exercises
+1. Common classes in Java
+2. String class and frequently used methods
+
+> Reviewed the following content
+2. Thread
+
 # Daily Update on 2022/12/26
 > learnt about contents below and did exercises
 1. Deadlock and how to deal with it
