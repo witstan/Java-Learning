@@ -1,3 +1,13 @@
+# Daily Update on 2022/12/28
+> learnt about contents below and did exercises
+1. String to char[] 
+2. String to byte[]
+3. StringBuffer and StringBuilder
+4. java.util.Date and java.sql.Date
+
+> Just for fun
+1. Accomplished LeetCode Problem - Palindrome Number
+
 # Daily Update on 2022/12/27
 > learnt about contents below and did exercises
 1. Common classes in Java
@@ -46,7 +56,7 @@ dizzy and headache
 > Project with 80% progress
 1. myproject03(one method and one class to go)
 
-got covid, haha, it may slow the work. (but looks like it actully did)
+got covid, damn, it may slow the work. (but looks like it actully did)
 
 # Daily Update on 2022/12/15
 > Project with 60% progress
