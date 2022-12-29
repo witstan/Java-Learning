@@ -29,13 +29,13 @@ public class StringTest1 {
         byte[] b1 = s1.getBytes("gbk");//使用gbk的字符集进行编码
         System.out.println(Arrays.toString(b1));
 
-        String s2 = new String(b);
+        String s2 = new String(b);//使用默认的字符集，进行解码。
         System.out.println(s2);
 
-        String s3 = new String(b1);
+        String s3 = new String(b1);//出现乱码，解码和编码字符集不一致
         System.out.println(s3);
 
-        String s4 = new String(b1,"gbk");
+        String s4 = new String(b1,"gbk");//不出乱码
         System.out.println(s4);
 
 

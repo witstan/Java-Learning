@@ -1,3 +1,10 @@
+# Daily Update on 2022/12/29
+> Did exercises
+1. 5 String problems
+
+> Just for fun
+1. Accomplished LeetCode Problem - Sqrt(x)
+
 # Daily Update on 2022/12/28
 > learnt about contents below and did exercises
 1. String to char[] 
