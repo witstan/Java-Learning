@@ -1,3 +1,10 @@
+# Daily Update on 2022/12/30
+> learnt about contents below and did exercises
+1. SimpleDateFormat class
+2. Calendar class
+3. LocalDate, LocalTime, LocalDateTime classes
+4. Instant class
+
 # Daily Update on 2022/12/29
 > Did exercises
 1. 5 String problems
