@@ -1,3 +1,8 @@
+# Daily Update on 2022/12/31
+> learnt about contents below and did exercises
+1. DateTimeFormatter class
+2. Zoneld, ZonedDate Time, Clock, TemporalAdjuster, TemporalAdjusters
+
 # Daily Update on 2022/12/30
 > learnt about contents below and did exercises
 1. SimpleDateFormat class

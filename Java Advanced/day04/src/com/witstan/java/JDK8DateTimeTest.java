@@ -3,6 +3,9 @@ package com.witstan.java;
 import org.junit.Test;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.time.temporal.TemporalAccessor;
 import java.util.Date;
 
 /**
@@ -91,5 +94,53 @@ public class JDK8DateTimeTest {
         //ofEpochMilli()：通过给定的毫秒数，获取Instant实例 --> Date(Long millis)
         Instant ins = Instant.ofEpochMilli(83293749273L);
         System.out.println(ins);
+    }
+
+    /*
+    DateTimeFormatter:格式化或解析日期、时间
+    类似于SimpleDateFormat
+
+     */
+    @Test
+    public void test3(){
+        //方式一：预定义的标准格式。如：
+        //ISO_LOCAL_DATE_TIME;ISO_LOCAL_DATE;ISO_LOCAL_TIME
+        DateTimeFormatter f1 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+        //格式化：日期 --> 字符串
+        LocalDateTime now = LocalDateTime.now();
+        String s1 = f1.format(now);
+        System.out.println(now);
+        System.out.println(s1);
+
+        //解析：字符串 --> 日期
+        TemporalAccessor parse = f1.parse("2022-12-31T22:02:00.264");
+        System.out.println(parse);
+
+
+        //方式二：
+        //本地化相关的格式：如ofLocalizedDateTime()
+        //FormatStyle.LONG / FormatStyle.MEDIUM / FormatStyle.SHORT ：适用于LocalDateTime
+
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
+        //格式化
+        String s2 = formatter1.format(now);
+        System.out.println(s2);//2022年12月31日 下午10时15分55秒
+
+        //本地化相关的格式。如：ofLocalizedDate()
+        //FormatStyle.FULL / FormatStyle.LONG / FormatStyle.MEDIUM / FormatStyle.SHORT
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
+        //格式化
+        String s3 = formatter2.format(LocalDate.now());
+        System.out.println(s3);//2022-12-31
+
+        //方式三：自定义的格式。如：ofPattern(“yyyy-MM-dd hh:mm:ss”)
+        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        //格式化
+        String s4 = formatter3.format(LocalDateTime.now());
+        System.out.println(s4);//2022-12-31 10:17:29
+
+        //解析
+        TemporalAccessor parse1 = formatter3.parse("2022-12-31 10:17:29");
+        System.out.println(parse1);
     }
 }
