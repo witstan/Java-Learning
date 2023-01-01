@@ -1,7 +1,18 @@
+# Daily Update on 2023/1/1
+> learnt about contents below and did exercises
+1. Comparator and Comparable
+2. System, Math, BigInteger, BigDecimal
+3. Enum
+4. Annotation
+
+> Reviewed the following content
+1. Date & Time APIs
+2. Comparator and Comparable
+
 # Daily Update on 2022/12/31
 > learnt about contents below and did exercises
 1. DateTimeFormatter class
-2. Zoneld, ZonedDate Time, Clock, TemporalAdjuster, TemporalAdjusters
+2. ZoneId, ZonedDate Time, Clock, TemporalAdjuster, TemporalAdjusters
 
 # Daily Update on 2022/12/30
 > learnt about contents below and did exercises
@@ -33,7 +44,7 @@
 2. String class and frequently used methods
 
 > Reviewed the following content
-2. Thread
+1. Thread
 
 # Daily Update on 2022/12/26
 > learnt about contents below and did exercises
