@@ -1,3 +1,8 @@
+# Daily Update on 2023/1/2
+> learnt about contents below and did exercises
+1. @Repeatable, @Target, @Retention
+2. Collection framework
+
 # Daily Update on 2023/1/1
 > learnt about contents below and did exercises
 1. Comparator and Comparable
