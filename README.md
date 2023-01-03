@@ -1,3 +1,14 @@
+# Daily Update on 2023/1/3
+> learnt about contents below and did exercises
+1. Collection interface common methods
+2. Iterator class
+3. foreach
+4. ArrayList, LinkedList, Vector source codes analysis
+
+> Reviewed the following content
+1. Enum
+2. Annotation
+
 # Daily Update on 2023/1/2
 > learnt about contents below and did exercises
 1. @Repeatable, @Target, @Retention
