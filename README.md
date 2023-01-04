@@ -1,3 +1,11 @@
+# Daily Update on 2023/1/4
+> learnt about contents below and did exercises
+1. List interface common methods
+2. Set interface
+3. HashSet and requirement of overriding hashCode() and equals()
+4. LinkedHashSet
+5. TreeSet implements Comparable and new Comparator()
+
 # Daily Update on 2023/1/3
 > learnt about contents below and did exercises
 1. Collection interface common methods
