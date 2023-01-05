@@ -45,7 +45,9 @@ public class IteratorTest {
 //        }
 
         //方式三：推荐
+        //hasNext(): 判断是否还有下一个元素
         while(i.hasNext()){
+            //next(): ①指针下移 ②将下移后集合位置上的元素返回
             System.out.println(i.next());
         }
 

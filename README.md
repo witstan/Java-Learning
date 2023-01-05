@@ -1,3 +1,14 @@
+# Daily Update on 2023/1/5
+> learnt about contents below and did exercises
+1. Map interface framework
+2. Implementations
+3. HashMap internal implementation(jdk8 and before)
+
+> Reviewed the following content
+1. Collection interface
+2. List interface
+3. Set interface
+
 # Daily Update on 2023/1/4
 > learnt about contents below and did exercises
 1. List interface common methods
