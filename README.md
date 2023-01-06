@@ -1,10 +1,20 @@
+# Daily Update on 2023/1/6
+> learnt about contents below and did exercises
+1. HashMap, LinkedHashMap, TreeMap
+2. Map common methods
+3. Properties
+4. Collecionts class
+
+> Just for fun
+1. Accomplished LeetCode Problem - TwoSum (using HashMap)
+
 # Daily Update on 2023/1/5
 > learnt about contents below and did exercises
 1. Map interface framework
 2. Implementations
 3. HashMap internal implementation(jdk8 and before)
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Collection interface
 2. List interface
 3. Set interface
@@ -24,7 +34,7 @@
 3. foreach
 4. ArrayList, LinkedList, Vector source codes analysis
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Enum
 2. Annotation
 
@@ -40,7 +50,7 @@
 3. Enum
 4. Annotation
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Date & Time APIs
 2. Comparator and Comparable
 
@@ -78,7 +88,7 @@
 1. Common classes in Java
 2. String class and frequently used methods
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Thread
 
 # Daily Update on 2022/12/26
@@ -133,7 +143,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 2. throw and throws
 3. Custom Exception
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Error & Exception
 
 # Daily Update on 2022/12/13
@@ -142,7 +152,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 2. Inner Class
 3. Error & Exception
 
-> Reviewed the following content
+> Reviewed the following contents
 1. abstract keyword
 2. Interface
 3. Inner Class
@@ -167,7 +177,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 1. final keyword
 2. abstract keyword
 
-> Reviewed the following content
+> Reviewed the following contents
 1. static keyword
 2. Singleton
 3. Block
@@ -178,7 +188,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 2. Singleton - Lazy and Eager Initialization
 3. Block
 
-> Reviewed the following content
+> Reviewed the following contents
 1. Polymorphism
 2. Object class and internal methods
 3. Wrapper Classes
@@ -200,7 +210,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 2. instanceof Keyword
 3. Polymorphism Exercises
 
-> Reviewed the following content
+> Reviewed the following contents
 1. super Keyword
 2. Method Overriding
 3. Subclass Object Instantiation
@@ -219,7 +229,7 @@ got covid, damn, it may slow the work. (but looks like it actully did)
 1. OOP - Inheritance
 2. Eclipse Debug Features
 
-> Reviewed the following content
+> Reviewed the following contents
 1. OOP - Inheritance
 
 > Did Exercise of following content

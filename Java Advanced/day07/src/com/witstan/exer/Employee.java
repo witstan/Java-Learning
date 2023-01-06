@@ -1,6 +1,7 @@
 package com.witstan.exer;
 
 import java.time.LocalDate;
+import java.time.Month;
 
 /**
  * @author witstan
@@ -13,7 +14,7 @@ public class Employee implements Comparable{
 
     public Employee(String name, MyDate birthday) {
         this.name = name;
-        this.age = LocalDate.now().getYear() - birthday.getYear();
+        this.age = getAgeFromBirthday(birthday);
         this.birthday = birthday;
     }
 
@@ -62,11 +63,23 @@ public class Employee implements Comparable{
         throw new RuntimeException("传入的数据类型不符");
     }
 
-    public int getIntToEpochday(){
-        return (int)(birthdayToLocalDate().toEpochDay());
+    public long getToEpochday(){
+        return birthdayToLocalDate().toEpochDay();
     }
 
     public LocalDate birthdayToLocalDate(){
         return LocalDate.of(birthday.getYear(), birthday.getMonth(), birthday.getDay());
+    }
+
+    private int getAgeFromBirthday(MyDate birthday){
+        if(LocalDate.now().getMonthValue() - birthday.getMonth() < 0){
+                return LocalDate.now().getYear() - birthday.getYear() - 1;
+            }else if(LocalDate.now().getMonthValue() - birthday.getMonth() == 0){
+                if(LocalDate.now().getDayOfMonth() - birthday.getDay() < 0){
+                    return LocalDate.now().getYear() - birthday.getYear() - 1;
+                }
+                return LocalDate.now().getYear() - birthday.getYear();
+            }
+        return LocalDate.now().getYear() - birthday.getYear();
     }
 }

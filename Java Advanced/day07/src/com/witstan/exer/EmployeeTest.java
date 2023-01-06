@@ -36,9 +36,9 @@ public class EmployeeTest {
     public void test2(){
         Employee e1 = new Employee("Adam",new MyDate(1987,2,13));
         Employee e2 = new Employee("Boris",new MyDate(1987,3,14));
-        Employee e3 = new Employee("Jerry",new MyDate(2002,3,15));
+        Employee e3 = new Employee("Jerry",new MyDate(2002,1,6));
         Employee e4 = new Employee("David",new MyDate(1967,6,18));
-        Employee e5 = new Employee("Ellen",new MyDate(1967,6,17));
+        Employee e5 = new Employee("Ellen",new MyDate(1966,6,17));
 
         Comparator c = new Comparator() {
             @Override
@@ -47,9 +47,14 @@ public class EmployeeTest {
                     Employee e1 = (Employee)o1;
                     Employee e2 = (Employee)o2;
                     //方式一：
-//                    return e1.getIntToEpochday() - e2.getIntToEpochday();
+                    if(e1.getToEpochday() - e2.getToEpochday() < 0){
+                        return -1;
+                    }else if (e1.getToEpochday() - e2.getToEpochday() == 0){
+                        return 0;
+                    }
+                    return 1;
                     //方式二：
-                    return e1.birthdayToLocalDate().compareTo(e2.birthdayToLocalDate());
+//                    return e1.birthdayToLocalDate().compareTo(e2.birthdayToLocalDate());
                 }
                 throw new RuntimeException("传入的类型数据不符");
             }
