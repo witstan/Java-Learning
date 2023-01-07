@@ -47,23 +47,23 @@ import java.util.*;
  *
  *      补充：关于情况2和情况3：此时key1-value1和原来的数据以链表的方式存储。
  *
- *     在不断的添加过程中，会涉及到扩容问题，当超出临界值（threshold）且要存放的位置非空时，扩容，默认扩容方式：扩容为原来容量的2倍，并将原有的数据复制到新的数组。
+ *    在不断的添加过程中，会涉及到扩容问题，当超出临界值（threshold）且要存放的位置非空时，扩容，默认扩容方式：扩容为原来容量的2倍，并将原有的数据复制到新的数组。
  *
- *     jdk8 相较于jdk7在底层实现方面的不同：
- *     1. new HashMap():底层没有创建一个长度16的数组
- *     2. jdk 8 底层的数组是：Node[], 而非Entry[]
- *     3. 首次调用put()方法时，底层创建长度为16的数组
- *     4. jdk7底层结构只有：数组+链表。jdk8中底层结构：数组+链表+红黑树
- *     当数组的某一个索引位置上的元素以链表的形式存在的数据个数>8且当前数组的长度>64时，
- *     此时索引位置上的所有数据改为使用红黑树存储。
+ *    jdk8 相较于jdk7在底层实现方面的不同：
+ *    1. new HashMap():底层没有创建一个长度16的数组
+ *    2. jdk 8 底层的数组是：Node[], 而非Entry[]
+ *    3. 首次调用put()方法时，底层创建长度为16的数组
+ *    4. jdk7底层结构只有：数组+链表。jdk8中底层结构：数组+链表+红黑树
+ *    当数组的某一个索引位置上的元素以链表的形式存在的数据个数>8且当前数组的长度>64时，
+ *    此时索引位置上的所有数据改为使用红黑树存储。
  *
- *     DEFAULT_INITIAL_CAPACITY : HashMap的默认容量，16
- *     DEFAULT_LOAD_FACTOR：HashMap的默认加载因子
- *     threshold：扩容的临界值，=容量*填充因子: 默认16*0.75 = 12
- *     TREEIFY_THRESHOLD：Bucket中链表长度大于该默认值，转化为红黑树：8
- *     MIN_TREEIFY_CAPACITY：桶中的Node被树化时最小的hash表容量。：64
+ *    DEFAULT_INITIAL_CAPACITY : HashMap的默认容量，16
+ *    DEFAULT_LOAD_FACTOR：HashMap的默认加载因子
+ *    threshold：扩容的临界值，=容量*填充因子: 默认16*0.75 = 12
+ *    TREEIFY_THRESHOLD：Bucket中链表长度大于该默认值，转化为红黑树：8
+ *    MIN_TREEIFY_CAPACITY：桶中的Node被树化时最小的hash表容量。：64
  *
- * 四、LinkedHashMap的底层实现原理（了解）
+ * 四LinkedHashMap的底层实现原理（了解）
  *    源码中：
  *    static class Entry<K,V> extends HashMap.Node<K,V> {
  *          Entry<K,V> before, after;

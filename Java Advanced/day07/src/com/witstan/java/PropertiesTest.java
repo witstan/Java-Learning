@@ -1,6 +1,7 @@
 package com.witstan.java;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 /**
@@ -11,15 +12,28 @@ public class PropertiesTest {
 
     //Properties:常用来处理配置文件。key和value都是String类型
     public static void main(String[] args) throws Exception{
-        Properties p = new Properties();
-        FileInputStream f = new FileInputStream("jdbc.properties");
-        p.load(f);//加载流对应的文件
+        FileInputStream f = null;
+        try {
+            Properties p = new Properties();
+            f = new FileInputStream("jdbc.properties");
+            p.load(f);//加载流对应的文件
 
-        String name = p.getProperty("name");
-        String password = p.getProperty("password");
+            String name = p.getProperty("name");
+            String password = p.getProperty("password");
 
-        System.out.println( "name = " + name + ", password = " + password);
+            System.out.println( "name = " + name + ", password = " + password);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(f != null){
+                try {
+                    f.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
-        f.close();
+
     }
 }

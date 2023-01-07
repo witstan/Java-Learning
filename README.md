@@ -1,3 +1,12 @@
+# Daily Update on 2023/1/7
+> learnt about contents below and did exercises
+1. Generic
+2. Generic class
+
+> Reviewed the following contents
+1. Map
+2. Collections
+
 # Daily Update on 2023/1/6
 > learnt about contents below and did exercises
 1. HashMap, LinkedHashMap, TreeMap
