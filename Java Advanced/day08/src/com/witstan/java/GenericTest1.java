@@ -2,6 +2,9 @@ package com.witstan.java;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 如何自定义泛型结构：泛型类、泛型接口、泛型方法。
  *
@@ -34,6 +37,30 @@ public class GenericTest1 {
 
         SubOrder1<String> order1 = new SubOrder1<>();
         order1.setOrderT("order2");
+    }
+
+    @Test
+    public void test3(){
+
+        ArrayList<String> list1 = null;
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        //泛型不同的引用不能互相赋值
+//        list1 = list2;
+
+        Person p1 = null;
+        Person p2 = null;
+        p1 = p2;
+    }
+
+    @Test
+    public void test4(){
+        Order<String> o = new Order();
+        Integer[] arr = new Integer[]{1,2,3};
+
+        //泛型方法在调用时, 指明泛型参数的类型
+        List<Integer> list = o.copyFromArrayToList(arr);
+        System.out.println(list);
     }
 
 }

@@ -1,3 +1,11 @@
+# Daily Update on 2023/1/9
+> learnt about contents below and did exercises
+1. customized Generic class
+2. Generic method
+3. Generic in subclass
+4. wildcard
+5. File class and common methods
+
 # Daily Update on 2023/1/7
 > learnt about contents below and did exercises
 1. Generic
