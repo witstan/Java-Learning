@@ -1,3 +1,7 @@
+# Daily Update on 2023/1/10
+> Did exercise
+1. File class methods
+
 # Daily Update on 2023/1/9
 > learnt about contents below and did exercises
 1. customized Generic class
