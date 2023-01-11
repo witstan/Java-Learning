@@ -1,5 +1,10 @@
 # Daily Update on 2023/1/10
 > Did exercise
+1. Generic
+2. File class
+
+# Daily Update on 2023/1/10
+> Did exercise
 1. File class methods
 
 # Daily Update on 2023/1/9
