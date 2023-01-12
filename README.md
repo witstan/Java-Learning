@@ -1,5 +1,14 @@
-# Daily Update on 2023/1/10
-> Did exercise
+# Daily Update on 2023/1/12
+> learnt about contents below and did exercises
+1. I/O Stream framework
+2. FileReader class
+
+> Reviewed the following contents
+1. Generic
+2. File class
+
+# Daily Update on 2023/1/11
+> Did exercises
 1. Generic
 2. File class
 

@@ -10,7 +10,7 @@ import java.util.*;
  * @author witstan
  * @create 2023-01-11 21:36
  */
-public class Homework {
+public class Homework{
 
     @Test
     public void test1(){
@@ -32,7 +32,7 @@ public class Homework {
         for(String key : keys){
             System.out.println(key + "=" + map.get(key));
         }
-        
+
 
     }
 
@@ -52,10 +52,10 @@ public class Homework {
     }
 
     //提供一个方法，用于遍历获取HashMap<String,String>中的所有value，并存放在List中返回。考虑上集合中泛型的使用。
-    public List<String> returnList(HashMap<String, String> map){
-        ArrayList<String> list = new ArrayList<>();
-        Collection<String> values = map.values();
-        for (String value : values){
+    public <E> List<E> returnList(HashMap map){
+        ArrayList<E> list = new ArrayList<>();
+        Collection<E> values = map.values();
+        for (E value : values){
             list.add(value);
         }
         return list;
