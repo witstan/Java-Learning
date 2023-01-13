@@ -47,7 +47,6 @@ public class DateTimeTest {
         Date d4 = new java.sql.Date(837529841891l);
         java.sql.Date d5 = (java.sql.Date) d4;
         //情况二：
-
         Date d6 = new Date();
         java.sql.Date d7 = new java.sql.Date(d6.getTime());
 

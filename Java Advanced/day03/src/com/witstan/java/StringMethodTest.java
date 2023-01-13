@@ -91,9 +91,9 @@ public class StringMethodTest {
      */
     @Test
     public void test3(){
-//        String str1 = "helloworld";
-//        boolean b = str1.endsWith("rld");
-//        System.out.println(b);
+        String str1 = "helloworld";
+        boolean b = str1.endsWith("Rld");
+        System.out.println(b);
 //
 //        boolean b1 = str1.startsWith("hel");
 //        System.out.println(b1);
@@ -109,9 +109,9 @@ public class StringMethodTest {
 //
 //        System.out.println(str1.indexOf("lo", 4));
 
-        String s4 = "helloworlowd";
-        System.out.println(s4.lastIndexOf("ow"));
-        System.out.println(s4.lastIndexOf("ow", 6));
+//        String s4 = "helloworlowd";
+//        System.out.println(s4.lastIndexOf("ow"));
+//        System.out.println(s4.lastIndexOf("ow", 6));
 
         //什么情况下，indexOf(str)和lastIndexOf(str)返回值相同？
         //情况一：存在唯一str。情况二：不存在str

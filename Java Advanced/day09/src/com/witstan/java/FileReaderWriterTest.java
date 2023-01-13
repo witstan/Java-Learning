@@ -2,9 +2,7 @@ package com.witstan.java;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * 一、流的分类：
@@ -13,11 +11,11 @@ import java.io.IOException;
  * 3. 流的角色：节点流、处理流
  *
  * 二、 流的体系就够
- * 抽象基类          节点流                    缓冲流（处理流的一种）
- * InputStream      FileInputStream          BufferedInputStream
- * OutputStream     FileOutputStream         BufferedOutputStream
- * Reader           FileReader               BufferedReader
- * Reader           FileReader               BufferedWriter
+ * 抽象基类          节点流                                             缓冲流（处理流的一种）
+ * InputStream      FileInputStream(read(byte[] buffer))              BufferedInputStream(read(byte[] buffer))
+ * OutputStream     FileOutputStream(write(byte[] buffer,0,len))      BufferedOutputStream(write(byte[] buffer,0,len))
+ * Reader           FileReader(read(char[] cbuf))                     BufferedReader(read(char[] cbuf))
+ * Reader           FileReader(write(char[] cbuf,0,len))              BufferedWriter(write(char[] cbuf,0,len))
  *
  *
  *
@@ -81,4 +79,155 @@ public class FileReaderWriterTest {
 
 
     }
+
+
+    //对read()操作升级：使用read的重载方法
+    @Test
+    public void testFileReader1() {
+        FileReader fileReader = null;
+        //1. File类的实例化
+        try {
+            File file = new File("hello.txt");
+            //2. FileReader流的实例化
+            fileReader = new FileReader(file);
+
+            //3. 读入的操作
+            //read(char[] cbuf)：返回每次读入cbuf数组中的字符的个数。如果达到文件末位，返回-1
+            char[] cbuf = new char[5];
+            int len;//记录每次读入到cbuf数组中的字符的个数
+            while((len = fileReader.read(cbuf)) != -1){
+                //错误的写法
+//                for (int i = 0; i < cbuf.length; i++) {
+//                    System.out.print(cbuf[i]);
+//                }
+                //正确的写法
+//                for (int i = 0; i < len; i++) {
+//                    System.out.print(cbuf[i]);
+//                }
+                //方式二：
+                //错误的写法，对应着方式一的错误写法
+                String str = new String(cbuf);
+                System.out.println(str);
+                //正确的写法
+                String s = new String(cbuf, 0, len);
+                System.out.println(s);
+
+
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //4. 资源的关闭
+            try {
+                if(fileReader != null)
+                fileReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+
+    /*
+    从内存中写出数据倒硬盘的文件里。
+
+    说明：
+    1. 输出操作，对应的File可以不存在的。并不会报异常
+    2.
+    File对应的硬盘中的文件如果不存在：在输出之前会自动创建此文件。
+    File对应的硬盘中的文件如果存在：
+        如果流使用的构造器是：FileWriter(file, false) / FileWriter(file)：对原有文件的覆盖
+        如果流使用的构造器是：FileWriter(file, true) ：不会对原有文件的覆盖，而是在原有文件上追加内容
+
+
+
+     */
+    @Test
+    public void  testFileWriter(){
+        //1. 提供File类的对象，指明写出到的文件
+        FileWriter fileWriter = null;
+        try {
+            File file = new File("hello1.txt");
+
+            //2. 提供FileWriter的对象，用于数据的写出
+            fileWriter = new FileWriter(file, false);
+
+
+            //3. 写出的操作
+            fileWriter.write("i hava a dream\n");
+            fileWriter.write("i hava two dreams");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //4. 流资源的关闭
+            if(fileWriter != null)
+            try {
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+
+
+
+    }
+
+    @Test
+    public void testFileReaderFileWriter() {
+
+        FileReader fr = null;
+        FileWriter fw = null;
+        try {
+            //1. 创建File类的对象，指明读入和写出的文件
+            File srcFile = new File("hello.txt");
+            File destFile = new File("hello2.txt");
+            //不能使用字符流来处理图片等字节数据
+//            File srcFile = new File("b3a.jpg");
+//            File destFile = new File("b3a1.jpg");
+
+            //2. 创建输入流和输出流的对象
+            fr = new FileReader(srcFile);
+            fw = new FileWriter(destFile);
+
+
+            //3. 数据的读入和写出操作
+            char[] cbuf = new char[5];
+            int len;//记录每次读入到cbuf数组中的字符的个数
+            while((len = fr.read(cbuf)) != -1){
+                //每次写出len个字符
+                fw.write(cbuf,0,len);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(fw != null){
+                try {
+                    fw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(fr != null){
+                try {
+                    fr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
+        //4. 关闭流资源
+
+
+
+    }
+
+
+
 }

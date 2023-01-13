@@ -10,12 +10,12 @@ package com.witstan.java;
 public class SeasonTest1 {
     public static void main(String[] args) {
         Season1 summer = Season1.SUMMER;
-        //toString():
+        //toString(): 返回枚举类对象的名称
         System.out.println(summer.toString());
 
 //        System.out.println(Season1.class.getSuperclass());
         System.out.println("**************");
-        //values()；
+        //values()：返回所有的枚举类对象构成的数组
         Season1[] values = Season1.values();
         for (int i = 0; i < values.length; i++) {
             System.out.println(values[i]);
