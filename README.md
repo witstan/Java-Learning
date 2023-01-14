@@ -1,3 +1,9 @@
+# Daily Update on 2023/1/14
+> learnt about contents below and did exercises
+1. Counting exercise
+2. Picture encryption exercise
+3. InputStreamReader class
+
 # Daily Update on 2023/1/13
 > learnt about contents below and did exercises
 1. FileWriter class
