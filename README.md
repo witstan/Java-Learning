@@ -1,3 +1,14 @@
+# Daily Update on 2023/1/20
+> Reviewed the following contents
+1. InputStream, OutputStream
+2. Reader, Writer
+3. InputStreamReader, OutputStreamWriter
+
+# Daily Update on 2023/1/17
+> learnt about contents below and did exercises
+1. PrintStream and PrintWriter
+2. DataInputStream
+
 # Daily Update on 2023/1/14
 > learnt about contents below and did exercises
 1. Counting exercise
