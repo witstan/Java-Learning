@@ -1,3 +1,9 @@
+# Daily Update on 2023/1/21
+> learnt about contents below and did exercises
+1. Object Streams
+2. Use of serialVersionUID
+3. RandomAccessFile class
+
 # Daily Update on 2023/1/20
 > Reviewed the following contents
 1. InputStream, OutputStream
