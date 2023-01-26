@@ -1,3 +1,11 @@
+# Daily Update on 2023/1/26
+> learnt about contents below and did exercises
+1. IP address and InetAddress class
+2. port number
+3. TCP and UDP
+4. Tomcat Web Application Deployment
+5. URL class
+
 # Daily Update on 2023/1/21
 > learnt about contents below and did exercises
 1. Object Streams

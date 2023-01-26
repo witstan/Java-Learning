@@ -3,6 +3,7 @@ package com.witstan.java;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -13,6 +14,8 @@ import java.io.RandomAccessFile;
  *
  * 3. 如果RandomAccessFile作为输出流时，写出到的文件如果不存在，则在执行过程中自动创建
  *    如果写出到的文件存在，则会对原有文件内容覆盖。（默认情况下，从开头覆盖）
+ *
+ * 4. 可以通过相关操作，实现RandomAccessFile插入数据操作
  *
  *
  *
@@ -59,11 +62,55 @@ public class RandomAccessFileTest {
     @Test
     public void test2() throws IOException {
 
-        RandomAccessFile raf = new RandomAccessFile(new File("hello1.txt"), "rw");
+        RandomAccessFile raf = new RandomAccessFile(new File("hello.txt"), "rw");
 
-        raf.write("xyz".getBytes());
+        raf.seek(3);//将指针调到角标为3的位置
+        raf.write("xyz".getBytes());//
 
         raf.close();
 
     }
+    /*
+    使用RandomAccessFile实现数据的插入效果
+     */
+    @Test
+    public void test3() throws IOException {
+        RandomAccessFile raf1 = new RandomAccessFile(new File("hello.txt"),"rw");
+
+
+//        raf1.seek(3);
+//        byte[] buffer = new byte[1024];
+//        int len;
+//        while((len = raf1.read(buffer)) != -1){
+//
+//        }
+
+
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        RandomAccessFileTest test = new RandomAccessFileTest();
+        File file = new File("hello1.txt");
+        test.insert(file, 3, "xyz");
+    }
+
+    public void insert(File file, long pos, String s) throws IOException {
+        RandomAccessFile raf = new RandomAccessFile(file,"rw");
+        StringBuilder sb = new StringBuilder((int) file.length());
+        byte[] buffer = new byte[1024];
+        int len;
+        raf.seek(pos);
+        while((len = raf.read(buffer)) != -1){
+            sb.append(new String(buffer,0,len));
+        }
+
+        raf.seek(pos);
+        raf.write(s.getBytes());
+        raf.write(sb.toString().getBytes());
+
+
+    }
+
+
 }
