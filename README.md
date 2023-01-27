@@ -1,3 +1,16 @@
+# Daily Update on 2023/1/27
+> learnt about contents below and did exercises
+1. Reflection framework
+2. Class class
+3. Classloader
+4. get instance of Runtime class
+
+> Reviewed the following contents
+1. Serialization
+2. other IO streams
+3. network features
+4. TCP, UDP, URL classes
+
 # Daily Update on 2023/1/26
 > learnt about contents below and did exercises
 1. IP address and InetAddress class
