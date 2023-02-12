@@ -9,9 +9,6 @@ import java.io.Serializable;
  * 3. 除了当前Person类需要实现Serializable接口之外，还必须保证其内部所有属性可序列化。
  * （默认情况下，基本数据类型可序列化）
  *
- *  补充：ObjectOutputStream和ObjectInputStream不能序列化static和transient修饰的成员变量
- *
- *
  * @author witstan
  * @create 2023-01-21 16:23
  */

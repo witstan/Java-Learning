@@ -1,3 +1,22 @@
+# Daily Update on 2023/2/12
+> learnt about contents below and did exercises
+1. Dynamic Proxy
+2. AOP
+3. Java 8 new features
+4. Lambda expression
+5. Method references
+
+> Reviewed the following contents
+1. Class
+2. Reflection
+
+# Daily Update on 2023/1/28
+> learnt about contents below and did exercises
+1. to get runtime class inner structure
+2. getDeclaredField(s)()
+3. getDeclaredMethod(s)()
+4. getDeclaredConstructor(s)()
+
 # Daily Update on 2023/1/27
 > learnt about contents below and did exercises
 1. Reflection framework

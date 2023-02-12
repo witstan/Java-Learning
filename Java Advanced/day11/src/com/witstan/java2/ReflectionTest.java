@@ -3,6 +3,7 @@ package com.witstan.java2;
 import com.witstan.java1.Person;
 import org.junit.Test;
 
+import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

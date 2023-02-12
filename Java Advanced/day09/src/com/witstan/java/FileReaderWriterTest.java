@@ -15,7 +15,7 @@ import java.io.*;
  * InputStream      FileInputStream(read(byte[] buffer))              BufferedInputStream(read(byte[] buffer))
  * OutputStream     FileOutputStream(write(byte[] buffer,0,len))      BufferedOutputStream(write(byte[] buffer,0,len))
  * Reader           FileReader(read(char[] cbuf))                     BufferedReader(read(char[] cbuf))
- * Reader           FileReader(write(char[] cbuf,0,len))              BufferedWriter(write(char[] cbuf,0,len))
+ * Weader           FileWeader(write(char[] cbuf,0,len))              BufferedWriter(write(char[] cbuf,0,len))
  *
  *
  *
@@ -205,6 +205,7 @@ public class FileReaderWriterTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            //4. 关闭流资源
             if(fw != null){
                 try {
                     fw.close();
@@ -220,11 +221,6 @@ public class FileReaderWriterTest {
                 }
             }
         }
-
-
-        //4. 关闭流资源
-
-
 
     }
 
