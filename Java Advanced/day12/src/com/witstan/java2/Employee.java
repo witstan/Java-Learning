@@ -43,7 +43,7 @@ public class Employee {
 	}
 
 	public Employee() {
-
+		System.out.println("Employee()...");
 	}
 
 	public Employee(int id) {

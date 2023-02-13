@@ -1,5 +1,11 @@
 # Daily Update on 2023/2/12
 > learnt about contents below and did exercises
+1. Constructor refirences
+2. Stream API
+3. Stream methods
+
+# Daily Update on 2023/2/12
+> learnt about contents below and did exercises
 1. Dynamic Proxy
 2. AOP
 3. Java 8 new features
