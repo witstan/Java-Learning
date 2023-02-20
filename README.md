@@ -1,4 +1,24 @@
-# Daily Update on 2023/2/12
+# Daily Update on 2023/2/20
+> learnt about contents below and did exercises
+1. java9 new features
+
+> Reviewed the following contents
+1. Stream API
+2. Optional class
+
+# Daily Update on 2023/2/19
+> Reviewed the following contents
+1. Dynamic Proxy
+2. Lambda expression
+3. Function interface
+4. Method references
+5. Constructor refirences
+
+# Daily Update on 2023/2/18
+> learnt about contents below and did exercises
+1. Optional class
+
+# Daily Update on 2023/2/13
 > learnt about contents below and did exercises
 1. Constructor refirences
 2. Stream API
@@ -13,7 +33,7 @@
 5. Method references
 
 > Reviewed the following contents
-1. Class
+1. Class class
 2. Reflection
 
 # Daily Update on 2023/1/28
